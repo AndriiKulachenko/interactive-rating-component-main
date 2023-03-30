@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <div class="star"><img class="imgStar" src="images/icon-star.svg"></div>
+     <!-- Rating state start -->
+    <h1>How did we do?</h1>
+    <h2>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</h2>
+    <div class="rating">
+        <label>
+          <input type="radio" id="btnradio" name="ratingbtn" value="1" class="real-radio">
+            <span class="custom-radio">1</span>
+        </label>
+        <label>
+          <input type="radio" id="btnradio" name="ratingbtn" value="2" class="real-radio">
+            <span class="custom-radio">2</span>
+        </label>
+        <label>
+          <input type="radio" id="btnradio" name="ratingbtn" value="3" class="real-radio">
+            <span class="custom-radio">3</span>
+        </label>
+        <label>
+          <input type="radio" id="btnradio" name="ratingbtn" value="4" class="real-radio">
+            <span class="custom-radio">4</span>
+        </label>
+        <label>
+          <input type="radio" id="btnradio" name="ratingbtn" value="5" class="real-radio">
+            <span class="custom-radio">5</span>
+        </label>
+    </div> 
+    <button class="sub">SUBMIT</button>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!-- You selected out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! -->
+
+  </div>
+ 
+<script src="index.js"></script>
+</body>
+</html>
