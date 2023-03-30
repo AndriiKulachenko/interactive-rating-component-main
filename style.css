@@ -3,7 +3,7 @@ body {
     
 }
 
-.container {
+.rating-container {
     font-family: Overpass;
     font-size: 15px;
     background:hsl(213, 19%, 18%);
@@ -33,10 +33,12 @@ body {
 h1 {
     margin-top: 30px;
     font-size: 24px;
+    color:antiquewhite;
 }
 
 h2 {
     font-size: 15px;
+    color:rgb(187, 183, 176);
 }
 
 .rating {
@@ -48,7 +50,8 @@ h2 {
 }
 .custom-radio {
     position: relative;
-    display: inline-block;
+    display: grid;
+    justify-content: center;
     outline: none;
     color: antiquewhite;
     background: hsl(218, 10%, 22%);
@@ -57,7 +60,7 @@ h2 {
     width: 43px;
     cursor: pointer;
     font-size: 16px;
-    text-align: center;
+    align-items: center;
     
 } 
 
@@ -68,17 +71,11 @@ h2 {
     opacity: 0;
 }
 
-.custom-radio::before {
-    content: '';
-    color: hsl(217, 35%, 90%);
-	background: hsl(25, 97%, 53%);
-	cursor: pointer;
-	box-shadow: 0px 0px 7px #00000057;
-    display: none;
+
+.real-radio:checked + .custom-radio {
+    background: hsl(25, 97%, 53%);
 }
-.real-radio:checked + .custom-radio::before {
-    display: block;
-}
+
 
 .sub {
     color: aliceblue;
@@ -90,9 +87,15 @@ h2 {
     margin-left: 28px;
     outline: none;
     cursor: pointer;
+    border:none;
 }
 
 .sub:hover {
     color: black;
     background-color:hsl(60, 20%, 99%) ;
 } 
+
+.result-container {
+    display: none;
+    color:aliceblue;
+}
